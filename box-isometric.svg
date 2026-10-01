@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+  <title>箱の立体図 - 200×80×100 mm</title>
+  <desc>200mm幅×80mm奥行き×100mm高さの箱の等角投影図</desc>
+  <defs>
+    <style>
+      .front{fill:#e8f4ff;stroke:#1769aa;stroke-width:2}
+      .top{fill:#b3d9ff;stroke:#1769aa;stroke-width:2}
+      .side{fill:#7fbfff;stroke:#1769aa;stroke-width:2}
+      .edge{stroke:#0d3b66;stroke-width:2}
+      .label{font-family:Arial,'Noto Sans JP',sans-serif;font-size:18px;font-weight:bold;fill:#0d3b66;text-anchor:middle}
+      .dim{font-family:Arial,'Noto Sans JP',sans-serif;font-size:14px;fill:#333;text-anchor:middle}
+      .title{font-family:Arial,'Noto Sans JP',sans-serif;font-size:28px;font-weight:bold;fill:#222}
+    </style>
+  </defs>
+  
+  <rect width="900" height="700" fill="#f9f9f9"/>
+  <text x="450" y="40" class="title">箱型 立体図（等角投影図）</text>
+  
+  <!-- Isometric projection of a box: 200(W) x 80(D) x 100(H) -->
+  <!-- Center point for isometric view -->
+  <!-- Front face (200 x 100) -->
+  <polygon class="front" points="150,500 550,500 550,200 150,200"/>
+  <polyline class="edge" points="150,500 550,500 550,200 150,200 150,500" fill="none"/>
+  
+  <!-- Top face (200 x 80) - isometric parallel -->
+  <polygon class="top" points="150,200 220,140 620,140 550,200"/>
+  <polyline class="edge" points="150,200 220,140 620,140 550,200" fill="none"/>
+  
+  <!-- Right side face (80 x 100) - isometric parallel -->
+  <polygon class="side" points="550,200 620,140 620,440 550,500"/>
+  <polyline class="edge" points="550,200 620,140 620,440 550,500" fill="none"/>
+  
+  <!-- Dimension lines and labels -->
+  <!-- Width dimension (200mm) -->
+  <line x1="150" y1="530" x2="550" y2="530" stroke="#666" stroke-width="1"/>
+  <line x1="150" y1="525" x2="150" y2="535" stroke="#666" stroke-width="1"/>
+  <line x1="550" y1="525" x2="550" y2="535" stroke="#666" stroke-width="1"/>
+  <text x="350" y="560" class="dim">幅 200 mm</text>
+  
+  <!-- Depth dimension (80mm) -->
+  <line x1="620" y1="140" x2="680" y2="100" stroke="#666" stroke-width="1"/>
+  <line x1="617" y1="143" x2="625" y2="135" stroke="#666" stroke-width="1"/>
+  <line x1="677" y1="103" x2="685" y2="95" stroke="#666" stroke-width="1"/>
+  <text x="720" y="130" class="dim">奥行き 80 mm</text>
+  
+  <!-- Height dimension (100mm) -->
+  <line x1="120" y1="200" x2="120" y2="500" stroke="#666" stroke-width="1"/>
+  <line x1="115" y1="200" x2="125" y2="200" stroke="#666" stroke-width="1"/>
+  <line x1="115" y1="500" x2="125" y2="500" stroke="#666" stroke-width="1"/>
+  <text x="60" y="355" class="dim" transform="rotate(-90 60 355)">高さ 100 mm</text>
+  
+  <!-- Face labels -->
+  <text x="350" y="365" class="label">正面</text>
+  <text x="585" y="165" class="label">上面</text>
+  <text x="635" y="330" class="label">側面</text>
+  
+  <!-- Additional info box -->
+  <rect x="50" y="600" width="800" height="80" fill="white" stroke="#ccc" stroke-width="1" rx="5"/>
+  <text x="70" y="625" style="font-family:Arial,'Noto Sans JP',sans-serif;font-size:14px;fill:#333;font-weight:bold">仕様：</text>
+  <text x="70" y="650" style="font-family:Arial,'Noto Sans JP',sans-serif;font-size:13px;fill:#555">材質：アルミニウム | 板厚：2 mm | のりしろ：10 mm | 容積：1,600,000 mm³</text>
+  <text x="70" y="670" style="font-family:Arial,'Noto Sans JP',sans-serif;font-size:13px;fill:#555">色：水色 = 正面 | 薄青 = 上面 | 濃青 = 側面</text>
+</svg>
